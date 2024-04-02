@@ -5,7 +5,7 @@ from PIL import Image
 
 
 def run():
-    image = Image.open("../../res/hero_image.jpg")
+    image = Image.open("./res/hero_image.jpg")
     st.image(image, use_column_width=True)
 
     st.title("Pokemon Dataset")

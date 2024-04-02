@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from PIL import Image
 
-model = load_model("../../output/clustering_model")
+model = load_model("./output/clustering_model")
 
 def plot_features(data, title):
     fig, ax = plt.subplots(figsize=(10, 6))
@@ -15,7 +15,7 @@ def plot_features(data, title):
     st.pyplot(fig)
     
 def run():
-    image = Image.open("../../res/hero_image.jpg")
+    image = Image.open("./res/hero_image.jpg")
     st.image(image, use_column_width=True)
 
     st.title("Pokemon Clustering Analysis")

@@ -3,7 +3,7 @@ import pandas as pd
 from pycaret.classification import *
 from PIL import Image
 
-model = load_model("../../output/classification_model")
+model = load_model("./output/classification_model")
 
 st.cache_data.clear()
 
@@ -14,7 +14,7 @@ def predict(data):
 
 
 def run():
-    image = Image.open("../../res/hero_image.jpg")
+    image = Image.open("./res/hero_image.jpg")
     st.image(image, use_column_width=True)
 
     select_box = st.sidebar.selectbox("Choose predict method:", ("Single", "Bulk"))
